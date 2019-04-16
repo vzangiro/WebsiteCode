@@ -2,11 +2,159 @@
 <html>
 <head>
 <title>Page Title</title>
-</head>
-<body>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body id="myPage">
+    
+<!-- Navbar -->
+<div class="w3-top">
+        <div class="w3-bar w3-theme-d2 w3-left-align">
+         <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-pale-red w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+         <a href="#" class="w3-bar-item w3-button w3-red w3-hover-pale-red"><i class="fa fa-home w3-margin-right"></i>Home</a>
+         <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-pale-red">Work</a>
+         <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-pale-red">Opinions</a>
+         <a href="#streamingservice" class="w3-bar-item w3-button w3-hide-small w3-hover-pale-red">Streaming Service</a>
+         <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-pale-red">Contact</a>
+           
+          <div class="w3-dropdown-hover w3-hide-small">
+           <button class="w3-button w3-hover-pale-red" title="Notifications">Amazon <i class="fa fa-caret-down"></i></button>     
+           <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                   <a href="Amazon_Movies.html" class = "w3-bar-item w3-button w3-hover-pale-red">Movies</a>
+                   <a href="Amazon_TV_Shows.html" class = "w3-bar-item w3-button w3-hover-pale-red">TV Shows</a>
+           </div>
+         </div>
+        
+          <div class="w3-dropdown-hover w3-hide-small">
+               <button class="w3-button w3-hover-pale-red" title="Notifications">HBO Now <i class="fa fa-caret-down"></i></button>     
+               <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                       <a href="HBONOW_Movies.html" class = "w3-bar-item w3-button w3-hover-pale-red">Movies</a>
+                       <a href="HBONOW_TV_Shows.html" class = "w3-bar-item w3-button w3-hover-pale-red">TV Shows</a>
+               </div>
+             </div>
+             
+          <div class="w3-dropdown-hover w3-hide-small">
+                   <button class="w3-button w3-hover-pale-red" title="Notifications">Hulu <i class="fa fa-caret-down"></i></button>     
+                   <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                           <a href="Hulu_Movies.html" class = "w3-bar-item w3-button w3-hover-pale-red">Movies</a>
+                           <a href="Hulu_TV_Shows.html"class = "w3-bar-item w3-button w3-hover-pale-red">TV Shows</a>
+                   </div>
+                 </div>
+                
+          <div class="w3-dropdown-hover w3-hide-small">
+                       <button class="w3-button w3-hover-pale-red" title="Notifications">Itunes <i class="fa fa-caret-down"></i></button>     
+                       <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                               <a href="Itunes_Movies.html" class = "w3-bar-item w3-button w3-hover-pale-red">Movies</a>
+                               <a href="Itunes_TV_Shows.html"class = "w3-bar-item w3-button w3-hover-pale-red">TV Shows</a>
+                       </div>
+                     </div>
+                     
+          <div class="w3-dropdown-hover w3-hide-small">
+                           <button class="w3-button w3-hover-pale-red" title="Notifications">Netflix <i class="fa fa-caret-down"></i></button>     
+                           <div class="w3-dropdown-content w3-card-4 w3-bar-block ">
+                                   <a href="Netflix_Movies.html" class = "w3-bar-item w3-button w3-hover-pale-red">Movies</a>
+                                   <a href="Netflix_TV_Shows.html"class = "w3-bar-item w3-button w3-hover-pale-red">TV Shows</a>
+                           </div>
+                         </div>
+          <!-- Search Bar Inside Navbar -->
+             <form action="/action_page.php">
+             <input type="text" class="w3-bar-item w3-input" placeholder="Search.." name="Go">
+               <button type="submit"><i class="fa fa-search"></i></button> 
+          </form>
+        </div>
+        </div>
 
-<h1>This is a Heading</h1>
-<p>Amazon Movies</p>
+
+ <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+    <div class="w3-row w3-padding-64">
+      <div class="w3-twothird w3-container">
+        <h1 class="w3-text-teal">Heading</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
+          dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <div class="w3-third w3-container">
+        <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+        <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+      </div>
+    </div>
+  
+    <div class="w3-row">
+      <div class="w3-twothird w3-container">
+        <h1 class="w3-text-teal">Heading</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
+          dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <div class="w3-third w3-container">
+        <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+        <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+      </div>
+    </div>
+  
+    <div class="w3-row w3-padding-64">
+      <div class="w3-twothird w3-container">
+        <h1 class="w3-text-teal">Heading</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
+          dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <div class="w3-third w3-container">
+        <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+        <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+      </div>
+    </div>
+  
+    <!-- Pagination -->
+    <div class="w3-center w3-padding-32">
+      <div class="w3-bar">
+        <a class="w3-button w3-black" href="#">1</a>
+        <a class="w3-button w3-hover-black" href="#">2</a>
+        <a class="w3-button w3-hover-black" href="#">3</a>
+        <a class="w3-button w3-hover-black" href="#">4</a>
+        <a class="w3-button w3-hover-black" href="#">5</a>
+        <a class="w3-button w3-hover-black" href="#">&raquo;</a>
+      </div>
+    </div>
+  
+    <footer id="myFooter">
+      <div class="w3-container w3-theme-l2 w3-padding-32">
+        <h4>Footer</h4>
+      </div>
+  
+      <div class="w3-container w3-theme-l1">
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+      </div>
+    </footer>
+  
+  <!-- END MAIN -->
+  </div>
+  
+  <script>
+  // Get the Sidebar
+  var mySidebar = document.getElementById("mySidebar");
+  
+  // Get the DIV with overlay effect
+  var overlayBg = document.getElementById("myOverlay");
+  
+  // Toggle between showing and hiding the sidebar, and add overlay effect
+  function w3_open() {
+    if (mySidebar.style.display === 'block') {
+      mySidebar.style.display = 'none';
+      overlayBg.style.display = "none";
+    } else {
+      mySidebar.style.display = 'block';
+      overlayBg.style.display = "block";
+    }
+  }
+  
+  // Close the sidebar with the close button
+  function w3_close() {
+    mySidebar.style.display = "none";
+    overlayBg.style.display = "none";
+  }
+  </script>
+         
 
 </body>
 </html>
