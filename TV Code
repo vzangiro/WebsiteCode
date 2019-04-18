@@ -12,5 +12,212 @@
       <div class="w3-third w3-container">
         <img src="https://m.media-amazon.com/images/M/MV5BMjhiMzgxZTctNDc1Ni00OTIxLTlhMTYtZTA3ZWFkODRkNmE2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg" width="300" height="450">     
         </div>
-        
- </div>
+   </div>
+   
+    <div class="w3-row w3-padding-64">
+      <div class="w3-twothird w3-container">
+        <h1 class="w3-text-black">Friday Night Lights</h1>
+          <h4>2006-2011  |   TV-14  |  8.7/10  </h4>
+          <h3> Description:</h3>
+        <p>The trials and tribulations of small town Texas football players, their friends, family, and coaching staff.</p>
+          <h3> Stars: Kyle Chandler, Connie Britton </h3>
+        </div>
+      <div class="w3-third w3-container">
+        <img src="https://ib1.hulu.com/user/v3/artwork/55525c91-d5af-48cd-8553-7b5bc32e9862?base_image_bucket_name=hummus&base_image=4fd6b295-e0ee-4f89-b6a2-093464529985&size=400x600&format=jpeg" width="300" height="450">     
+        </div>
+   </div>   
+
+    <div class="w3-row w3-padding-64">
+      <div class="w3-twothird w3-container">
+        <h1 class="w3-text-black">Friends</h1>
+          <h4>1994-2004  |   TV-14  |  8.9/10  </h4>
+          <h3> Description:</h3>
+        <p>Follows the personal and professional lives of six twenty to thirty-something-year-old friends living in Manhattan.</p>
+          <h3> Stars: Matthew Perry, Jennifer Aniston </h3>
+        </div>
+      <div class="w3-third w3-container">
+        <img src="https://m.media-amazon.com/images/M/MV5BNDVkYjU0MzctMWRmZi00NTkxLTgwZWEtOWVhYjZlYjllYmU4XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UY268_CR0,0,182,268_AL_.jpg" width="300" height="450">     
+        </div>
+   </div>   
+   
+    <div class="w3-row w3-padding-64">
+      <div class="w3-twothird w3-container">
+        <h1 class="w3-text-black">Game of Thrones</h1>
+          <h4>2011-2019  |   TV-MA  |  9.5/10  </h4>
+          <h3> Description:</h3>
+        <p>Nine noble families fight for control over the mythical lands of Westeros, while an ancient enemy returns after being dormant for thousands of years.</p>
+          <h3> Stars: Kit Harrington, Emilia Clarke </h3>
+        </div>
+      <div class="w3-third w3-container">
+        <img src="https://specials-images.forbesimg.com/imageserve/5caf83b631358e5bca379532/960x0.jpg?fit=scale" width="300" height="450">     
+        </div>
+   </div>   
+   
+    <div class="w3-row w3-padding-64">
+      <div class="w3-twothird w3-container">
+        <h1 class="w3-text-black">House of Cards</h1>
+          <h4>2013-2018  |   TV-MA  |  8.8/10  </h4>
+          <h3> Description:</h3>
+        <p>A Congressman works with his equally conniving wife to exact revenge on the people who betrayed him.</p>
+          <h3> Stars: Kevin Spacey, Robin Wright </h3>
+        </div>
+      <div class="w3-third w3-container">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0b/House_of_Cards_season_1.png/250px-House_of_Cards_season_1.png" width="300" height="450">     
+        </div>
+   </div>      
+   
+   
+    <div class="w3-row w3-padding-64">
+      <div class="w3-twothird w3-container">
+        <h1 class="w3-text-black">Lost</h1>
+          <h4>2004-2010  |   TV-14  |  8.4/10  </h4>
+          <h3> Description:</h3>
+        <p>The survivors of a plane crash are forced to work together in order to survive on a seemingly deserted tropical island.</p>
+          <h3> Stars: Matthew Fox, Evangeline Lilly </h3>
+        </div>
+      <div class="w3-third w3-container">
+        <img src="https://ib.hulu.com/user/v3/artwork/466b3994-b574-44f1-88bc-63707507a6cb?base_image_bucket_name=image_manager&base_image=1ba65982-0d96-49aa-941b-4d3ceba46ada&size=400x600&format=jpeg" width="300" height="450">     
+        </div>
+   </div>      
+   
+   
+   <div class="w3-row w3-padding-64">
+      <div class="w3-twothird w3-container">
+        <h1 class="w3-text-black">Making a Murderer</h1>
+          <h4>2015-  |   TV-14  |  8.6/10  </h4>
+          <h3> Description:</h3>
+        <p>Filmed over a 10-year period, Steven Avery, a DNA exoneree who, while in the midst of exposing corruption in local law enforcement, finds himself the prime suspect in a grisly new crime.</p>
+          <h3> Stars: Steven Avery, Dolores Avery </h3>
+        </div>
+      <div class="w3-third w3-container">
+        <img src="https://i.dailymail.co.uk/1s/2018/10/17/14/5105420-6283589-image-a-1_1539783350398.jpg" width="300" height="450">     
+        </div>
+   </div>         
+   
+   <div class="w3-row w3-padding-64">
+      <div class="w3-twothird w3-container">
+        <h1 class="w3-text-black">Narcos</h1>
+          <h4>2015-2017  |   TV-MA  |  8.9/10  </h4>
+          <h3> Description:</h3>
+        <p>A chronicled look at the criminal exploits of Colombian drug lord Pablo Escobar, as well as the many other drug kingpins who plagued the country through the years.</p>
+          <h3> Stars: Pedro Pascal, Paulina Gaitan </h3>
+        </div>
+      <div class="w3-third w3-container">
+        <img src="https://d2e111jq13me73.cloudfront.net/sites/default/files/styles/product_image_aspect_switcher_170w/public/product-images/csm-tv/narcos-poster.jpg?itok=1DH1tm3V" width="300" height="450">     
+        </div>
+   </div>        
+   
+  <div class="w3-row w3-padding-64">
+      <div class="w3-twothird w3-container">
+        <h1 class="w3-text-black">Orange is the New Black</h1>
+          <h4>2013-  |   TV-MA  |  8.9/10  </h4>
+          <h3> Description:</h3>
+        <p>Convicted of a decade old crime of transporting drug money to an ex-girlfriend, normally law-abiding Piper Chapman is sentenced to a year and a half behind bars to face the reality of how life-changing prison can really be.</p>
+          <h3> Stars: Joel Garland, Taylor Schilling </h3>
+        </div>
+      <div class="w3-third w3-container">
+        <img src="https://m.media-amazon.com/images/M/MV5BMjA3MTE5ODM3M15BMl5BanBnXkFtZTgwNTIyMjQ5NTM@._V1_.jpg" width="300" height="450">     
+        </div>
+   </div>         
+   
+   
+  <div class="w3-row w3-padding-64">
+      <div class="w3-twothird w3-container">
+        <h1 class="w3-text-black">Parks and Recreation</h1>
+          <h4>2009-2015  |   TV-14  |  8.6/10  </h4>
+          <h3> Description:</h3>
+        <p>The absurd antics of an Indiana town's public officials as they pursue sundry projects to make their city a better place. </p>
+          <h3> Stars: Chris Pratt, Amy Poehler </h3>
+        </div>
+      <div class="w3-third w3-container">
+        <img src="https://m.media-amazon.com/images/M/MV5BMjA5MjUxNDgwNF5BMl5BanBnXkFtZTgwMDI5NjMwNDE@._V1_UY268_CR9,0,182,268_AL_.jpg" width="300" height="450">     
+        </div>
+   </div>          
+   
+   
+   <div class="w3-row w3-padding-64">
+      <div class="w3-twothird w3-container">
+        <h1 class="w3-text-black">Seinfeld</h1>
+          <h4>1989-1999  |   TV-PG  |  8.9/10  </h4>
+          <h3> Description:</h3>
+        <p>The continuing misadventures of neurotic New York City stand-up comedian Jerry Seinfeld and his equally neurotic New York City friends.</p>
+          <h3> Stars: Jerry Seinfeld, Julia Louis-Dreyfus </h3>
+        </div>
+      <div class="w3-third w3-container">
+        <img src="https://m.media-amazon.com/images/M/MV5BZjZjMzQ2ZmUtZWEyZC00NWJiLWFjM2UtMzhmYzZmZDcxMzllXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg" width="300" height="450">     
+        </div>
+   </div>       
+   
+    <div class="w3-row w3-padding-64">
+      <div class="w3-twothird w3-container">
+        <h1 class="w3-text-black">South Park </h1>
+          <h4>1997-  |   TV-MA  |  8.7/10  </h4>
+          <h3> Description:</h3>
+        <p>Follows the misadventures of four irreverent grade-schoolers in the quiet, dysfunctional town of South Park, Colorado.</p>
+          <h3> Stars: Trey Parker, Matt Stone </h3>
+        </div>
+      <div class="w3-third w3-container">
+        <img src="https://m.media-amazon.com/images/M/MV5BOGE2YWUzMDItNTg2Ny00NTUzLTlmZGYtNWMyNzVjMjQ3MThkXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UY268_CR0,0,182,268_AL_.jpg" width="300" height="450">     
+        </div>
+   </div>         
+   
+    <div class="w3-row w3-padding-64">
+      <div class="w3-twothird w3-container">
+        <h1 class="w3-text-black">Stranger Things </h1>
+          <h4>2016-  |   TV-14  |  8.9/10  </h4>
+          <h3> Description:</h3>
+        <p>When a young boy disappears, his mother, a police chief, and his friends must confront terrifying forces in order to get him back.</p>
+          <h3> Stars: Finn Wolfhard, Millie Bobby Brown </h3>
+        </div>
+      <div class="w3-third w3-container">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/A1uReOAZV8L._SL1500_.jpg" width="300" height="450">     
+        </div>
+   </div>     
+   
+   
+    <div class="w3-row w3-padding-64">
+      <div class="w3-twothird w3-container">
+        <h1 class="w3-text-black">The Office </h1>
+          <h4>2005-2013  |   TV-PG  |  8.8/10  </h4>
+          <h3> Description:</h3>
+        <p>A mockumentary on a group of typical office workers, where the workday consists of ego clashes, inappropriate behavior, and tedium.</p>
+          <h3> Stars: Steve Carell, Jenna Fischer </h3>
+        </div>
+      <div class="w3-third w3-container">
+        <img src="https://upload.wikimedia.org/wikipedia/en/2/24/TheOfficeUSSeason3Cover.jpg" width="300" height="450">     
+        </div>
+   </div>     
+   
+    <div class="w3-row w3-padding-64">
+      <div class="w3-twothird w3-container">
+        <h1 class="w3-text-black">The Sopranos </h1>
+          <h4>1999-2007  |   TV-MA  |  9.2/10  </h4>
+          <h3> Description:</h3>
+        <p>New Jersey mob boss Tony Soprano deals with personal and professional issues in his home and business life that affect his mental state, leading him to seek professional psychiatric counseling.</p>
+          <h3> Stars: James Gandolfini, Edie Falco </h3>
+        </div>
+      <div class="w3-third w3-container">
+        <img src="https://m.media-amazon.com/images/M/MV5BZGJjYzhjYTYtMDBjYy00OWU1LTg5OTYtNmYwOTZmZjE3ZDdhXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_UY268_CR3,0,182,268_AL_.jpg" width="300" height="450">     
+        </div>
+   </div>   
+   
+   <div class="w3-row w3-padding-64">
+      <div class="w3-twothird w3-container">
+        <h1 class="w3-text-black">The Walking Dead </h1>
+          <h4>2010-  |   TV-MA  |  8.3/10  </h4>
+          <h3> Description:</h3>
+        <p>Sheriff Deputy Rick Grimes wakes up from a coma to learn the world is in ruins, and must lead a group of survivors to stay alive.</p>
+          <h3> Stars: Andrew Lincoln, Lauren Cohan </h3>
+        </div>
+      <div class="w3-third w3-container">
+        <img src="https://imgc.allpostersimages.com/img/print/u-g-F54Q2J0.jpg?w=291&h=450" width="300" height="450">     
+        </div>
+   </div>     
+   
+   </div>
+   
+   
+   
+   
+   
+   
