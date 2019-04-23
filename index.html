@@ -86,15 +86,17 @@
       <a href="#service" class="w3-bar-item w3-button w3-hide-small w3-hover-pale-red">Service</a>
       <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-pale-red">Contact</a>
 
+
+      <!-------------- Login Button Inside Navbar ------------------------>
+      <button onclick="document.getElementById('id01').style.display='block'"
+        class="w3-button w3-red  w3-hover-pale-red w3-large" style="float:right;">Login</button>
+
+
       <!-------------- Search Bar Inside Navbar ----------------------->
-      <form action="SearchResults.html">
+      <form action="SearchResults.html" style="float:right;">
         <input type="text" class="w3-bar-item w3-input" placeholder="Enter search info..." name="Go">
         <button onclick="window.location.href='SearchResults.html'"><i class="fa fa-search"></i></button>
       </form>
-      <!-------------- Login Button Inside Navbar ------------------------>
-      <button onclick="document.getElementById('id01').style.display='block'"
-        class="w3-button w3-red  w3-hover-pale-red w3-large">Login</button>
-
     </div>
 
     <!---------------------------- Navbar on small screens ------------------------------->
@@ -114,7 +116,6 @@
 
   <!------------------------------------ Modal (pop-up login on click) ------------------------------------------------>
   <div class="w3-container">
-    <h2>W3.CSS Login Modal</h2>
     <div id="id01" class="w3-modal">
       <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
 
