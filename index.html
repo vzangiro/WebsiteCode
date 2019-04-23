@@ -6,226 +6,244 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <body id="myPage">
 
-<!-- Sidebar on click -->
-<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
-    <i class="fa fa-remove"></i>
-  </a>
-  <a href="#" class="w3-bar-item w3-button">Link 1</a>
-  <a href="#" class="w3-bar-item w3-button">Link 2</a>
-  <a href="#" class="w3-bar-item w3-button">Link 3</a>
-  <a href="#" class="w3-bar-item w3-button">Link 4</a>
-  <a href="#" class="w3-bar-item w3-button">Link 5</a>
-</nav>
+  <!-- Sidebar on click -->
+  <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2"
+    id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()"
+      class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+      <i class="fa fa-remove"></i>
+    </a>
+    <a href="#" class="w3-bar-item w3-button">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button">Link 4</a>
+    <a href="#" class="w3-bar-item w3-button">Link 5</a>
+  </nav>
 
-<!-- Navbar -->
-<div class="w3-top">
- <div class="w3-bar w3-theme-d2 w3-left-align">
-  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-pale-red w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-red w3-hover-pale-red"><i class="fa fa-home w3-margin-right"></i>Just Stream It - Home</a>
-  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-pale-red">Work</a>
-  <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-pale-red">Opinions</a>
-  <a href="#service" class="w3-bar-item w3-button w3-hide-small w3-hover-pale-red">Service</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-pale-red">Contact</a>
-    
-  <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-button w3-hover-pale-red" title="Notifications">Netflix <i class="fa fa-caret-down"></i></button>     
-      <div class="w3-dropdown-content w3-card-4 w3-bar-block ">
-              <a href="Netflix_Movies.html" class = "w3-bar-item w3-button w3-hover-pale-red">Movies</a>
-              <a href="Netflix_TV_Shows.html"class = "w3-bar-item w3-button w3-hover-pale-red">TV Shows</a>
-      </div>
-    </div>
-   <div class="w3-dropdown-hover w3-hide-small">
-    <button class="w3-button w3-hover-pale-red" title="Notifications">Amazon <i class="fa fa-caret-down"></i></button>     
-    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
-            <a href="Amazon_Movies.html" class = "w3-bar-item w3-button w3-hover-pale-red">Movies</a>
-            <a href="Amazon_TV_Shows.html" class = "w3-bar-item w3-button w3-hover-pale-red">TV Shows</a>
-    </div>
-  </div>
- 
-   <div class="w3-dropdown-hover w3-hide-small">
-        <button class="w3-button w3-hover-pale-red" title="Notifications">HBO Now <i class="fa fa-caret-down"></i></button>     
+  <!--------------- Navbar -------------------->
+  <div class="w3-top">
+    <div class="w3-bar w3-theme-d2 w3-left-align">
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-pale-red w3-theme-d2"
+        href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+      <a href="#" class="w3-bar-item w3-button w3-red w3-hover-pale-red"><i class="fa fa-home w3-margin-right"></i>Just
+        Stream It - Home</a>
+
+
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-button w3-hover-pale-red" title="Notifications">Amazon <i
+            class="fa fa-caret-down"></i></button>
         <div class="w3-dropdown-content w3-card-4 w3-bar-block">
-                <a href="HBONOW_Movies.html" class = "w3-bar-item w3-button w3-hover-pale-red">Movies</a>
-                <a href="HBONOW_TV_Shows.html" class = "w3-bar-item w3-button w3-hover-pale-red">TV Shows</a>
+          <a href="Amazon_Movies.html" class="w3-bar-item w3-button w3-hover-pale-red">Movies</a>
+          <a href="Amazon_TV_Shows.html" class="w3-bar-item w3-button w3-hover-pale-red">TV Shows</a>
         </div>
       </div>
-      
-   <div class="w3-dropdown-hover w3-hide-small">
-            <button class="w3-button w3-hover-pale-red" title="Notifications">Hulu <i class="fa fa-caret-down"></i></button>     
-            <div class="w3-dropdown-content w3-card-4 w3-bar-block">
-                    <a href="Hulu_Movies.html" class = "w3-bar-item w3-button w3-hover-pale-red">Movies</a>
-                    <a href="Hulu_TV_Shows.html"class = "w3-bar-item w3-button w3-hover-pale-red">TV Shows</a>
-            </div>
-          </div>
-         
-   <div class="w3-dropdown-hover w3-hide-small">
-                <button class="w3-button w3-hover-pale-red" title="Notifications">Itunes <i class="fa fa-caret-down"></i></button>     
-                <div class="w3-dropdown-content w3-card-4 w3-bar-block">
-                        <a href="Itunes_Movies.html" class = "w3-bar-item w3-button w3-hover-pale-red">Movies</a>
-                        <a href="Itunes_TV_Shows.html"class = "w3-bar-item w3-button w3-hover-pale-red">TV Shows</a>
-                </div>
-              </div>
-              
 
-   <!-- Search Bar Inside Navbar -->
-      <form  action="SearchResults.html" class="w3-right">
-      <input type="text" class="w3-bar-item w3-input" placeholder="Enter search info..." name="Go">
-        <button onclick="window.location.href='SearchResults.html'"><i class="fa fa-search"></i></button> 
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-button w3-hover-pale-red" title="Notifications">HBO Now <i
+            class="fa fa-caret-down"></i></button>
+        <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+          <a href="HBONOW_Movies.html" class="w3-bar-item w3-button w3-hover-pale-red">Movies</a>
+          <a href="HBONOW_TV_Shows.html" class="w3-bar-item w3-button w3-hover-pale-red">TV Shows</a>
+        </div>
+      </div>
+
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-button w3-hover-pale-red" title="Notifications">Hulu <i class="fa fa-caret-down"></i></button>
+        <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+          <a href="Hulu_Movies.html" class="w3-bar-item w3-button w3-hover-pale-red">Movies</a>
+          <a href="Hulu_TV_Shows.html" class="w3-bar-item w3-button w3-hover-pale-red">TV Shows</a>
+        </div>
+      </div>
+
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-button w3-hover-pale-red" title="Notifications">Itunes <i
+            class="fa fa-caret-down"></i></button>
+        <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+          <a href="Itunes_Movies.html" class="w3-bar-item w3-button w3-hover-pale-red">Movies</a>
+          <a href="Itunes_TV_Shows.html" class="w3-bar-item w3-button w3-hover-pale-red">TV Shows</a>
+        </div>
+      </div>
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-button w3-hover-pale-red" title="Notifications">Netflix <i
+            class="fa fa-caret-down"></i></button>
+        <div class="w3-dropdown-content w3-card-4 w3-bar-block ">
+          <a href="Netflix_Movies.html" class="w3-bar-item w3-button w3-hover-pale-red">Movies</a>
+          <a href="Netflix_TV_Shows.html" class="w3-bar-item w3-button w3-hover-pale-red">TV Shows</a>
+        </div>
+      </div>
+      <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-pale-red">Work</a>
+      <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-pale-red">Opinions</a>
+      <a href="#service" class="w3-bar-item w3-button w3-hide-small w3-hover-pale-red">Service</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-pale-red">Contact</a>
+
+      <!-------------- Search Bar Inside Navbar ----------------------->
+      <form action="SearchResults.html" class="w3-right">
+        <input type="text" class="w3-bar-item w3-input" placeholder="Enter search info..." name="Go">
+        <button onclick="window.location.href='SearchResults.html'"><i class="fa fa-search"></i></button>
       </form>
- </div>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-    <a href="#team" class="w3-bar-item w3-button">Team</a>
-    <a href="#work" class="w3-bar-item w3-button">Work</a>
-    <a href="#streamingservice" class="w3-bar-item w3-button">Streaming Service</a>
-    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-    <a href="#" class="w3-bar-item w3-button">Search</a>
-  </div>
-</div>
-
-<!-- Image Header -->
-<div class="w3-display-container w3-animate-opacity">
-  <img src="./HeaderImage-3.jpg" alt="popcorn" style="width:100%;min-height:800px;max-height:650px;">
-</div>
-
-<!-- Modal -->
-<div id="id01" class="w3-modal">
-  <div class="w3-modal-content w3-card-4 w3-animate-top">
-    <header class="w3-container w3-teal w3-display-container"> 
-      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
-      <h4>Oh snap! We just showed you a modal..</h4>
-      <h5>Because we can <i class="fa fa-smile-o"></i></h5>
-    </header>
-    <div class="w3-container">
-      <p>Cool huh? Ok, enough teasing around..</p>
-      <p>Go to our <a class="w3-text-teal" href="/w3css/default.asp">W3.CSS Tutorial</a> to learn more!</p>
     </div>
-    <footer class="w3-container w3-teal">
-      <p>Modal footer</p>
-    </footer>
-  </div>
-</div>
 
-<!-- Work Container -->
-<div class="w3-container w3-padding-64 w3-center w3-red" id="team">
-<h2>Our Work</h2>
-<p>Our mission is to provide our customers with a user-friendly servive that will help them identify which streaming service option will fit them the best. Our website shows the contents of each service and what they have to offer. We have also included sample movies and TV shows that will be on the website. 
-  You can also explore what each movie and TV show have to offer and search where your favorites will be.</p>
-
-
-</div>
-
-<!-- Opinions Row -->
-<div class="w3-row-padding w3-padding-64 w3-red "  id="work">
-
-<div class="w3-quarter">
-  <div class="w3-card w3-white">
-    <div class="w3-container">
-<h2>Netflix</h2>
-<h4>Pros</h4>
-  <ul>
-    <li>Excellent Selection</li>
-    <li>Good Recommentdations</li>
-  </ul>
-  <h4>Cons</h4>
-    <ul>
-      <li>More Expensive</li>
-      <li>Movies don't stay on forever</li>
-      <li>Limited New Content</li>
-  </ul>
-  <h4>Outlook:</h4>
-      <p>Considered the best streaming service in the business, no other service has been able to match Netflix's success. One of the perks 
-        is that you can create up to five different profiles so you can share it with family and friends and stay on the same plan.</p>
-      <br></br>
+    <!---------------------------- Navbar on small screens ------------------------------->
+    <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+      <a href="#team" class="w3-bar-item w3-button">Team</a>
+      <a href="#work" class="w3-bar-item w3-button">Work</a>
+      <a href="#streamingservice" class="w3-bar-item w3-button">Streaming Service</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+      <a href="#" class="w3-bar-item w3-button">Search</a>
     </div>
   </div>
-</div>
 
-<div class="w3-quarter">
-  <div class="w3-card w3-white">
-    <div class="w3-container">
-<h2>Hulu</h2>
-<h4>Pros</h4>
-  <ul>
-    <li>Good for Current TV</li>
-    <li>Cheap</li>
-    <li>Student Discount</li>
-  </ul>
-  <h4>Cons</h4>
-    <ul>
-      <li>Commercials</li>
-      <li>Large Interface</li>
-      <li>Inconsistent TV Selections</li>
-  </ul>
-  <h4>Outlook:</h4>
-      <p>This provides a good alternative for people who don't want cable but like to keep up with current TV shows. 
-      This service provides access to most major network shows and a handful of cable shows the day after they air.</p>
-     
-    <br></br>
+  <!-------------------------------- Image Header ------------------------------------------->
+  <div class="w3-display-container w3-animate-opacity">
+    <img src="./HeaderImage-3.jpg" alt="popcorn" style="width:100%;min-height:800px;max-height:650px;">
+  </div>
+
+  <!------------------------------------ Modal ------------------------------------------------>
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-top">
+      <header class="w3-container w3-teal w3-display-container">
+        <span onclick="document.getElementById('id01').style.display='none'"
+          class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+        <h4>Oh snap! We just showed you a modal..</h4>
+        <h5>Because we can <i class="fa fa-smile-o"></i></h5>
+      </header>
+      <div class="w3-container">
+        <p>Cool huh? Ok, enough teasing around..</p>
+        <p>Go to our <a class="w3-text-teal" href="/w3css/default.asp">W3.CSS Tutorial</a> to learn more!</p>
+      </div>
+      <footer class="w3-container w3-teal">
+        <p>Modal footer</p>
+      </footer>
     </div>
   </div>
-</div>
-  
-<div class="w3-quarter">
-  <div class="w3-card w3-white">
-    <div class="w3-container">
-<h2>HBO NOW</h2>
-<h4>Pros</h4>
-  <ul>
-    <li>Award-winning Programming</li>
-    <li>Original News Programming</li>
-    <li>Top-tier Movies/TV Shows</li>
-  </ul>
-  <h4>Cons</h4>
-    <ul>
-      <li>More Expensive</li>
-      <li>Less Options</li>
-      
-  </ul>
-  <h4>Outlook:</h4>
-      <p>This service is built upon the high quality of their originial TV shows, and is the same as having the cable channel itself.</p>
-      
-    
-      <br></br>
-<br></br>
+
+  <!------------------------------------------ Work Container --------------------------------------->
+  <div class="w3-container w3-padding-64 w3-center w3-red" id="team">
+    <h2>Our Work</h2>
+    <p>Our mission is to provide our customers with a user-friendly servive that will help them identify which streaming
+      service option will fit them the best. Our website shows the contents of each service and what they have to offer.
+      We have also included sample movies and TV shows that will be on the website.
+      You can also explore what each movie and TV show have to offer and search where your favorites will be.</p>
+
+
+  </div>
+
+  <!---------------------------------------  Opinions Row ------------------------------------- -->
+  <div class="w3-row-padding w3-padding-64 w3-red " id="work">
+
+    <div class="w3-quarter">
+      <div class="w3-card w3-white">
+        <div class="w3-container">
+          <h2>Netflix</h2>
+          <h4>Pros</h4>
+          <ul>
+            <li>Excellent Selection</li>
+            <li>Good Recommentdations</li>
+          </ul>
+          <h4>Cons</h4>
+          <ul>
+            <li>More Expensive</li>
+            <li>Movies don't stay on forever</li>
+            <li>Limited New Content</li>
+          </ul>
+          <h4>Outlook:</h4>
+          <p>Considered the best streaming service in the business, no other service has been able to match Netflix's
+            success. One of the perks
+            is that you can create up to five different profiles so you can share it with family and friends and stay on
+            the same plan.</p>
+          <br></br>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-quarter">
+      <div class="w3-card w3-white">
+        <div class="w3-container">
+          <h2>Hulu</h2>
+          <h4>Pros</h4>
+          <ul>
+            <li>Good for Current TV</li>
+            <li>Cheap</li>
+            <li>Student Discount</li>
+          </ul>
+          <h4>Cons</h4>
+          <ul>
+            <li>Commercials</li>
+            <li>Large Interface</li>
+            <li>Inconsistent TV Selections</li>
+          </ul>
+          <h4>Outlook:</h4>
+          <p>This provides a good alternative for people who don't want cable but like to keep up with current TV shows.
+            This service provides access to most major network shows and a handful of cable shows the day after they
+            air.</p>
+
+          <br></br>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-quarter">
+      <div class="w3-card w3-white">
+        <div class="w3-container">
+          <h2>HBO NOW</h2>
+          <h4>Pros</h4>
+          <ul>
+            <li>Award-winning Programming</li>
+            <li>Original News Programming</li>
+            <li>Top-tier Movies/TV Shows</li>
+          </ul>
+          <h4>Cons</h4>
+          <ul>
+            <li>More Expensive</li>
+            <li>Less Options</li>
+
+          </ul>
+          <h4>Outlook:</h4>
+          <p>This service is built upon the high quality of their originial TV shows, and is the same as having the
+            cable channel itself.</p>
+
+
+          <br></br>
+          <br></br>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-quarter">
+      <div class="w3-card w3-white">
+        <div class="w3-container">
+          <h2>Amazon Prime Video</h2>
+          <h4>Pros</h4>
+          <ul>
+            <li>Good Original Shows</li>
+            <li>Included with Other Amazon Benefits</li>
+            <li>Student Discount</li>
+          </ul>
+          <h4>Cons</h4>
+          <ul>
+            <li>Rarely Gets New Shows</li>
+            <li>Not Available on Some Devices</li>
+          </ul>
+          <h4>Outlook:</h4>
+          <p>Prime offers movies, TV shows, and original programming, as well as free two-day shipping on Prime
+            purchases. Customers also recieve a free monthly Kindle book and have access to Amazon Music and Amazon
+            Prime Instant Video.</p>
+        </div>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="w3-quarter">
-  <div class="w3-card w3-white">
-    <div class="w3-container">
-<h2>Amazon Prime Video</h2>
-<h4>Pros</h4>
-  <ul>
-    <li>Good Original Shows</li>
-    <li>Included with Other Amazon Benefits</li>
-    <li>Student Discount</li>
-  </ul>
-  <h4>Cons</h4>
-    <ul>
-      <li>Rarely Gets New Shows</li>
-      <li>Not Available on Some Devices</li>
-  </ul>
-  <h4>Outlook:</h4>
-    <p>Prime offers movies, TV shows, and original programming, as well as free two-day shipping on Prime purchases. Customers also recieve a free monthly Kindle book and have access to Amazon Music and Amazon Prime Instant Video.</p>
-</div>
+  <!---------------------------------------  Container ------------------------------------- -->
+  <div class="w3-container" style="position:relative">
+    <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-red"
+      style="position:absolute;top:-28px;right:24px">+</a>
   </div>
-</div>
-</div>
 
-<!-- Container -->
-<div class="w3-container" style="position:relative">
-  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-red"
-  style="position:absolute;top:-28px;right:24px">+</a>
-</div>
-
-<!-- Pricing Row -->
-<div class="w3-row-padding w3-center w3-padding-64 w3-pale-red" id="streamingservice">
+  <!---------------------------------------  Pricing Row ------------------------------------- -->
+  <div class="w3-row-padding w3-center w3-padding-64 w3-pale-red" id="streamingservice">
     <h2>OPTIONS</h2>
     <p>Choose a streaming service that fits your needs.</p><br>
     <div class="w3-third w3-margin-bottom">
@@ -242,13 +260,14 @@
           <span class="w3-opacity">per month</span>
         </li>
         <li class="w3-white w3-padding-24">
-          <a href= "https://www.netflix.com/signup" ><button class="w3-button w3-red w3-padding-large"><i class="fa fa-check"></i> Sign Up</button></a>
+          <a href="https://www.netflix.com/signup"><button class="w3-button w3-red w3-padding-large"><i
+                class="fa fa-check"></i> Sign Up</button></a>
         </li>
       </ul>
     </div>
 
-  
-  <div class="w3-third w3-margin-bottom">
+
+    <div class="w3-third w3-margin-bottom">
       <ul class="w3-ul w3-border w3-hover-shadow">
         <li class="w3-theme">
           <p class="w3-xlarge">Amazon Prime Video</p>
@@ -262,15 +281,16 @@
           <span class="w3-opacity">per month</span>
         </li>
         <li class="w3-white w3-padding-24">
-          <a href="https://www.amazon.com/Prime-Video/b?node=2676882011"<button class="w3-button w3-red w3-padding-large"><i class="fa fa-check"></i> Sign Up</button></a>
+          <a href="https://www.amazon.com/Prime-Video/b?node=2676882011" <button
+            class="w3-button w3-red w3-padding-large"><i class="fa fa-check"></i> Sign Up</button></a>
         </li>
       </ul>
     </div>
-  
-  
-  
-  
-  <div class="w3-third w3-margin-bottom">
+
+
+
+
+    <div class="w3-third w3-margin-bottom">
       <ul class="w3-ul w3-border w3-hover-shadow">
         <li class="w3-theme">
           <p class="w3-xlarge">Hulu</p>
@@ -284,14 +304,15 @@
           <span class="w3-opacity">per month</span>
         </li>
         <li class="w3-white w3-padding-24">
-          <a href="https://www.hulu.com/start?&cmp=7957&utm_source=google&utm_medium=cpc&utm_campaign=BM%20Search%20BrandTerms&utm_term=hulu%20subscription&ds_rl=1251096&ds_rl=1251096&gclid=EAIaIQobChMI0secoaDT4QIV24uzCh3UhghgEAAYASAAEgL3pPD_BwE&gclsrc=aw.ds"<button class="w3-button w3-red w3-padding-large"><i class="fa fa-check"></i> Sign Up</button></a>
+          <a href="https://www.hulu.com/start?&cmp=7957&utm_source=google&utm_medium=cpc&utm_campaign=BM%20Search%20BrandTerms&utm_term=hulu%20subscription&ds_rl=1251096&ds_rl=1251096&gclid=EAIaIQobChMI0secoaDT4QIV24uzCh3UhghgEAAYASAAEgL3pPD_BwE&gclsrc=aw.ds"
+            <button class="w3-button w3-red w3-padding-large"><i class="fa fa-check"></i> Sign Up</button></a>
         </li>
       </ul>
     </div>
-  
-  
-  
-  
+
+
+
+
     <div class="w3-third w3-margin-bottom">
       <ul class="w3-ul w3-border w3-hover-shadow">
         <li class="w3-theme">
@@ -306,7 +327,8 @@
           <span class="w3-opacity">per month</span>
         </li>
         <li class="w3-white w3-padding-24">
-          <a href="https://www.hbo.com/order/now?pid=googleadwords_int&c=Google%7cSearch%7cMKL%7cIQ_ID_-VQ16-c&camp=Google%7cSearch%7cMKL%7cIQ_ID_-VQ16-c&gclid=EAIaIQobChMIjeOPvaDT4QIVloKzCh3nyAwfEAAYASAAEgIrhfD_BwE&gclsrc=aw.ds"<button class="w3-button w3-red w3-padding-large"><i class="fa fa-check"></i> Sign Up</button></a>
+          <a href="https://www.hbo.com/order/now?pid=googleadwords_int&c=Google%7cSearch%7cMKL%7cIQ_ID_-VQ16-c&camp=Google%7cSearch%7cMKL%7cIQ_ID_-VQ16-c&gclid=EAIaIQobChMIjeOPvaDT4QIVloKzCh3nyAwfEAAYASAAEgIrhfD_BwE&gclsrc=aw.ds"
+            <button class="w3-button w3-red w3-padding-large"><i class="fa fa-check"></i> Sign Up</button></a>
         </li>
       </ul>
     </div>
@@ -322,92 +344,95 @@
         <li class="w3-padding-16 w3-white"><b>Free</b> Download</li>
         <li class="w3-padding-16 w3-white">
           <h2 class="w3-wide w3-white"> Rent or Buy</h2>
-         <span class="w3-text-white"> per month </span>
+          <span class="w3-text-white"> per month </span>
         </li>
         <li class="w3-white w3-padding-24">
-          <a href="https://www.apple.com/itunes/download/"<button class="w3-button w3-red w3-padding-large"><i class="fa fa-check"></i> Download</button></a>
+          <a href="https://www.apple.com/itunes/download/" <button class="w3-button w3-red w3-padding-large"><i
+              class="fa fa-check"></i> Download</button></a>
         </li>
       </ul>
     </div>
-</div>
+  </div>
 
-<!-- Contact Container -->
-<div class="w3-container w3-padding-64 w3-red" id="contact">
-  <div class="w3-row">
-    <div class="w3-col m5">
-    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
-      <h3>University of Tennessee</h3>
-      <p>Industrial & Systems Engineering</p>
-      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Knoxville, TN</p>
-      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  (865)974-5321</p>
-      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  ise@vols.utk.edu</p>
-    </div>
-    <div class="w3-col m7">
-      <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
-      <div class="w3-section">      
-        <label>Name</label>
-        <input class="w3-input" type="text" name="Name" required>
+  <!---------------------------------------  Contact Container ------------------------------------- -->
+  <div class="w3-container w3-padding-64 w3-red" id="contact">
+    <div class="w3-row">
+      <div class="w3-col m5">
+        <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
+        <h3>University of Tennessee</h3>
+        <p>Industrial & Systems Engineering</p>
+        <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Knoxville, TN</p>
+        <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  (865)974-5321</p>
+        <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  ise@vols.utk.edu</p>
       </div>
-      <div class="w3-section">      
-        <label>Email</label>
-        <input class="w3-input" type="text" name="Email" required>
+      <div class="w3-col m7">
+        <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
+          <div class="w3-section">
+            <label>Name</label>
+            <input class="w3-input" type="text" name="Name" required>
+          </div>
+          <div class="w3-section">
+            <label>Email</label>
+            <input class="w3-input" type="text" name="Email" required>
+          </div>
+          <div class="w3-section">
+            <label>Message</label>
+            <input class="w3-input" type="text" name="Message" required>
+          </div>
+          <input class="w3-check" type="checkbox" checked name="Like">
+          <label>I Like it!</label>
+          <button type="submit" class="w3-button w3-right w3-theme">Send</button>
+        </form>
       </div>
-      <div class="w3-section">      
-        <label>Message</label>
-        <input class="w3-input" type="text" name="Message" required>
-      </div>  
-      <input class="w3-check" type="checkbox" checked name="Like">
-      <label>I Like it!</label>
-      <button type="submit" class="w3-button w3-right w3-theme">Send</button>
-      </form>
     </div>
   </div>
-</div>
 
-<!-- Image of location/map -->
-<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%;">
+  <!---------------------------------------  Image of location/map ------------------------------------- -->
+  <img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%;">
 
-<!-- Footer -->
-<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
-  <h4>Follow Us</h4>
-  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
-  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
-  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
-  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
-  <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  <!---------------------------------------  Footer ------------------------------------- -->
+  <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+    <h4>Follow Us</h4>
+    <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+    <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+    <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i
+        class="fa fa-google-plus"></i></a>
+    <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
+    <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i
+        class="fa fa-linkedin"></i></a>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 
-  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
-    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
-    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
-    <i class="fa fa-chevron-circle-up"></i></span></a>
-  </div>
-</footer>
+    <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+      <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>
+      <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+          <i class="fa fa-chevron-circle-up"></i></span></a>
+    </div>
+  </footer>
 
-<script>
-// Script for side navigation
-function w3_open() {
-  var x = document.getElementById("mySidebar");
-  x.style.width = "300px";
-  x.style.paddingTop = "10%";
-  x.style.display = "block";
-}
+  <script>
+    // Script for side navigation
+    function w3_open() {
+      var x = document.getElementById("mySidebar");
+      x.style.width = "300px";
+      x.style.paddingTop = "10%";
+      x.style.display = "block";
+    }
 
-// Close side navigation
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-}
+    // Close side navigation
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
 
-// Used to toggle the menu on smaller screens when clicking on the menu button
-function openNav() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-</script>
+    // Used to toggle the menu on smaller screens when clicking on the menu button
+    function openNav() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
 
 </body>
 </html>
