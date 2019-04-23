@@ -9,6 +9,13 @@
 
 <body id="myPage">
 
+  <!-- ------- Auto Adjust for Smaller Screens --------------- -->
+  <!-- <div style="width: 980px; margin: 0 auto; overflow: hidden;"> -->
+  <!-- <div style="float: left; width: 80%;">Left Column</div> -->
+  <!-- <div style="float: right; width: 20%;">Right Column</div> -->
+  <!-- </div> -->
+  <!--------------- Testing lines above  ------------------------>
+
   <!-- Sidebar on click -->
   <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2"
     id="mySidebar">
@@ -28,9 +35,7 @@
     <div class="w3-bar w3-theme-d2 w3-left-align">
       <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-pale-red w3-theme-d2"
         href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-      <a href="#" class="w3-bar-item w3-button w3-red w3-hover-pale-red"><i class="fa fa-home w3-margin-right"></i>Just
-        Stream It - Home</a>
-
+      <a href="#" class="w3-bar-item w3-button w3-red w3-hover-pale-red"><i class="fa fa-home w3-margin-right"></i>Home</a>
 
       <div class="w3-dropdown-hover w3-hide-small">
         <button class="w3-button w3-hover-pale-red" title="Notifications">Amazon <i
@@ -81,10 +86,13 @@
       <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-pale-red">Contact</a>
 
       <!-------------- Search Bar Inside Navbar ----------------------->
-      <form action="SearchResults.html" class="w3-right">
+      <form action="SearchResults.html">
         <input type="text" class="w3-bar-item w3-input" placeholder="Enter search info..." name="Go">
         <button onclick="window.location.href='SearchResults.html'"><i class="fa fa-search"></i></button>
       </form>
+
+      <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-red  w3-hover-pale-red w3-large">Login</button>
+
     </div>
 
     <!---------------------------- Navbar on small screens ------------------------------->
@@ -103,21 +111,33 @@
   </div>
 
   <!------------------------------------ Modal ------------------------------------------------>
-  <div id="id01" class="w3-modal">
-    <div class="w3-modal-content w3-card-4 w3-animate-top">
-      <header class="w3-container w3-teal w3-display-container">
-        <span onclick="document.getElementById('id01').style.display='none'"
-          class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
-        <h4>Oh snap! We just showed you a modal..</h4>
-        <h5>Because we can <i class="fa fa-smile-o"></i></h5>
-      </header>
-      <div class="w3-container">
-        <p>Cool huh? Ok, enough teasing around..</p>
-        <p>Go to our <a class="w3-text-teal" href="/w3css/default.asp">W3.CSS Tutorial</a> to learn more!</p>
+  <div class="w3-container">
+    <h2>W3.CSS Login Modal</h2>  
+    <div id="id01" class="w3-modal">
+      <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+  
+        <div class="w3-center"><br>
+          <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+          <img src="img_avatar4.png" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+        </div>
+  
+        <form class="w3-container" action="/action_page.php">
+          <div class="w3-section">
+            <label><b>Username</b></label>
+            <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="usrname" required>
+            <label><b>Password</b></label>
+            <input class="w3-input w3-border" type="password" placeholder="Enter Password" name="psw" required>
+            <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Login</button>
+            <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Remember me
+          </div>
+        </form>
+  
+        <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+          <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-red">Cancel</button>
+          <span class="w3-right w3-padding w3-hide-small">Forgot <a href="#">password?</a></span>
+        </div>
+  
       </div>
-      <footer class="w3-container w3-teal">
-        <p>Modal footer</p>
-      </footer>
     </div>
   </div>
 
