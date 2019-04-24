@@ -90,7 +90,7 @@
       <!-------------- Login Button Inside Navbar ------------------------>
       <button onclick="document.getElementById('id01').style.display='block'"
         class="w3-button w3-red  w3-hover-pale-red w3-large" style="float:right;">Login</button>
-    
+
 
       <!-------------- Search Bar Inside Navbar ----------------------->
       <form action="SearchResults.html" style="float:right;">
@@ -393,7 +393,7 @@
         <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  ise@vols.utk.edu</p>
       </div>
       <div class="w3-col m7">
-        <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
+        <form class="w3-container w3-card-4 w3-padding-16 w3-white">
           <div class="w3-section">
             <label>Name</label>
             <input class="w3-input" type="text" name="Name" required>
@@ -408,10 +408,21 @@
           </div>
           <input class="w3-check" type="checkbox" checked name="Like">
           <label>I Like it!</label>
-          <button type="submit" class="w3-button w3-right w3-theme">Send</button>
+
+          <button onclick="document.getElementById('SendID').style.display='none'"
+            class="w3-button w3-black w3-right">Send</button>
+          <div id="SendID" class="w3-modal">
+            <div class="w3-modal-content">
+              <div class="w3-container">
+                <p>Some text. Some text. Some text.</p>
+                <span onclick="document.getElementById('SendID').style.display='block'"
+                  class="w3-button w3-display-topright"></span>
+              </div>
+            </div>
         </form>
       </div>
     </div>
+  </div>
   </div>
 
   <!---------------------------------------  Image of location/map ------------------------------------- -->
