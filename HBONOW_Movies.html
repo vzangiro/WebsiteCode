@@ -12,14 +12,106 @@
 <!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-theme-d2 w3-left-align">
-   <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-pale-red w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-   <a href="https://vzangiro.github.io/WebsiteCode/#" target="_self" class="w3-bar-item w3-button w3-red w3-hover-pale-red"><i class="fa fa-home w3-margin-right"></i>Just Stream It - Home</a>
-    <!-- Search Bar Inside Navbar -->
-       <form action="/action_page.php" class="w3-right">
-       <input type="text" class="w3-bar-item w3-input" placeholder="Search.." name="Go">
-         <button type="submit"><i class="fa fa-search"></i></button> 
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-pale-red w3-theme-d2"
+      href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+    <a href="https://vzangiro.github.io/WebsiteCode/" class="w3-bar-item w3-button w3-red w3-hover-pale-red"><i
+        class="fa fa-home w3-margin-right"></i>Home</a>
+
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-button w3-hover-pale-red" title="Notifications">Amazon <i
+          class="fa fa-caret-down"></i></button>
+      <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+        <a href="Amazon_Movies.html" class="w3-bar-item w3-button w3-hover-pale-red">Movies</a>
+        <a href="Amazon_TV_Shows.html" class="w3-bar-item w3-button w3-hover-pale-red">TV Shows</a>
+      </div>
+    </div>
+
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-button w3-hover-pale-red" title="Notifications">HBO Now <i
+          class="fa fa-caret-down"></i></button>
+      <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+        <a href="HBONOW_Movies.html" class="w3-bar-item w3-button w3-hover-pale-red">Movies</a>
+        <a href="HBONOW_TV_Shows.html" class="w3-bar-item w3-button w3-hover-pale-red">TV Shows</a>
+      </div>
+    </div>
+
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-button w3-hover-pale-red" title="Notifications">Hulu <i class="fa fa-caret-down"></i></button>
+      <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+        <a href="Hulu_Movies.html" class="w3-bar-item w3-button w3-hover-pale-red">Movies</a>
+        <a href="Hulu_TV_Shows.html" class="w3-bar-item w3-button w3-hover-pale-red">TV Shows</a>
+      </div>
+    </div>
+
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-button w3-hover-pale-red" title="Notifications">Itunes <i
+          class="fa fa-caret-down"></i></button>
+      <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+        <a href="Itunes_Movies.html" class="w3-bar-item w3-button w3-hover-pale-red">Movies</a>
+        <a href="Itunes_TV_Shows.html" class="w3-bar-item w3-button w3-hover-pale-red">TV Shows</a>
+      </div>
+    </div>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-button w3-hover-pale-red" title="Notifications">Netflix <i
+          class="fa fa-caret-down"></i></button>
+      <div class="w3-dropdown-content w3-card-4 w3-bar-block ">
+        <a href="Netflix_Movies.html" class="w3-bar-item w3-button w3-hover-pale-red">Movies</a>
+        <a href="Netflix_TV_Shows.html" class="w3-bar-item w3-button w3-hover-pale-red">TV Shows</a>
+      </div>
+    </div>
+    <!-------------- Login Button Inside Navbar ------------------------>
+    <button onclick="document.getElementById('id01').style.display='block'"
+      class="w3-button w3-red  w3-hover-pale-red w3-large" style="float:right;">Login</button>
+
+
+    <!-------------- Search Bar Inside Navbar ----------------------->
+    <form action="SearchResults.html" style="float:right;">
+      <input type="text" class="w3-bar-item w3-input" placeholder="Enter search info..." name="Go">
+      <button class=" w3-button w3-red  w3-hover-pale-red w3-large" onclick="window.location.href='SearchResults.html'"><i class="fa fa-search"></i></button>
     </form>
   </div>
+
+  <!---------------------------- Navbar on small screens ------------------------------->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#team" class="w3-bar-item w3-button">Team</a>
+    <a href="#work" class="w3-bar-item w3-button">Work</a>
+    <a href="#service" class="w3-bar-item w3-button">Service</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    <a href="#" class="w3-bar-item w3-button">Search</a>
+  </div>
+</div>
+<!------------------------------------ Modal (pop-up login on click) ------------------------------------------------>
+<div class="w3-container">
+    <div id="id01" class="w3-modal">
+      <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+
+        <div class="w3-center"><br>
+          <span onclick="document.getElementById('id01').style.display='none'"
+            class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+          <img src="./fullsizeoutput_74.jpeg" alt="Avatar" style="width:45%" class="w3-circle w3-margin-top">
+        </div>
+
+        <form class="w3-container" action="index.html">
+          <div class="w3-section">
+            <label><b>Username</b></label>
+            <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="usrname"
+              required>
+            <label><b>Password</b></label>
+            <input class="w3-input w3-border" type="password" placeholder="Enter Password" name="psw" required>
+            <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Login</button>
+            <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Remember me
+          </div>
+        </form>
+
+        <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+          <button onclick="document.getElementById('id01').style.display='none'" type="button"
+            class="w3-button w3-red">Cancel</button>
+          <span class="w3-right w3-padding w3-hide-small">Forgot <a href="ForgotPassword.html">password?</a></span>
+          <span class="w3-right w3-padding w3-hide-small">New User? <a href="SignUp.html">Sign Up</a></span>
+        </div>
+
+      </div>
+    </div>
   </div>
 
 
