@@ -12,7 +12,7 @@ new Vue({
     mounted() {        
     },
     methods: {
-        submitLogin () {
+        submitlogin () {
             console.log("working here")
             // axios
             //     .get('https://api.coindesk.com/v1/bpi/currentprice.json')
