@@ -96,7 +96,8 @@
       <!-------------- Search Bar Inside Navbar ----------------------->
       <form action="SearchResults.html" style="float:right;">
         <input type="text" class="w3-bar-item w3-input" placeholder="Enter search info..." name="Go">
-        <button class=" w3-button w3-red  w3-hover-pale-red w3-large" onclick="window.location.href='SearchResults.html'"><i class="fa fa-search"></i></button>
+        <button class=" w3-button w3-red  w3-hover-pale-red w3-large"
+          onclick="window.location.href='SearchResults.html'"><i class="fa fa-search"></i></button>
       </form>
     </div>
 
@@ -388,26 +389,27 @@
         <p><i class="fa fa-phone w3-text-black w3-xlarge"></i>  (865)974-5321</p>
         <p><i class="fa fa-envelope-o w3-text-black w3-xlarge"></i>  ise@vols.utk.edu</p>
       </div>
-      <div class="w3-col m7 w3-container w3-card-4 w3-padding-16 w3-white">
-          <form>
-            <div class="w3-section">
-              <label>Name</label>
-              <input class="w3-input" type="text" name="Name" required>
-            </div>
-            <div class="w3-section">
-              <label>Email</label>
-              <input class="w3-input" type="text" name="Email" required>
-            </div>
-            <div class="w3-section">
-              <label>Message</label>
-              <input class="w3-input" type="text" name="Message" required>
-            </div>
-            <input class="w3-check" type="checkbox" checked name="Like">
-            <label>I Like it!</label>
-            <button type="button" onclick="sendButton()" class="w3-button w3-black w3-right" >Send</button>
-            <p id="demo"></p>
-          </form>
-        </div>
+      <div id="app" class="w3-col m7 w3-container w3-card-4 w3-padding-16 w3-white">
+        <form>
+          <div class="w3-section">
+            <label>Name</label>
+            <input class="w3-input" type="text" name="Name" required>
+          </div>
+          <div class="w3-section">
+            <label>Email</label>
+            <input v-model="email"  class="w3-input" type="text" name="Email" required>
+          </div>
+          <div class="w3-section">
+            <label>Comment</label>
+            <input v-model="comment"  class="w3-input" type="text" name="Message" required>
+          </div>
+          <input class="w3-check" type="checkbox" checked name="Like">
+          <label>I Like it!</label>
+          <p>{{status}}</p>
+          <button type="button" @click.prevent="submitComment()" class="w3-button w3-black w3-right">Send</button>
+          <p id="demo"></p>
+        </form>
+      </div>
     </div>
   </div>
 
@@ -456,9 +458,15 @@
 
     function sendButton() {
       document.getElementById("demo").innerHTML = "Your message has been submitted!";
-      
+
     }
   </script>
+
+  <!-- Scripts -->
+  <!-- development version, includes helpful console warnings -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="assets/js/my.js"></script>
 
 </body>
 
