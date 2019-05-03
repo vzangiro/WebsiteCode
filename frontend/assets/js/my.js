@@ -20,7 +20,7 @@ new Vue({
             //     .then(response => (this.message = response.data.chartName))
             
             axios
-                .post('http://localhost:5501/api/comment', {email: this.email, comment: this.comment})
+                .post('http://localhost:5500/api/comment', {email: this.email, comment: this.comment})
                 .then(response => (
                     this.msg = response.data.status,
                     (this.msg == 'success') ? this.status = 'Submitted! Thanks.' : ''                                     
