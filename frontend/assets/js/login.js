@@ -2,10 +2,10 @@ new Vue({
     el: '#app',
     data() {
         return {
-            msg: 'Hello world!',
             username: '',
             password: '',
-            status: ''
+            status: false,
+            msg: '',
         }
     },
 
@@ -19,10 +19,10 @@ new Vue({
             //     .then(response => (this.message = response.data.chartName))
             
             axios
-                .post('http://localhost:5501/api/login', {username: this.username, password: this.password})
+                .post('http://localhost:5500/api/login', {username: this.username, password: this.password})
                 .then(response => (
                     this.msg = response.data.status,
-                    (this.msg == 'success') ? this.status = 'Login ! Thanks.' : ''                                     
+                    (this.status == true) ? this.msg = 'Login failed' :                                     
                     )                    
                 )             
                 // .then(() => ((this.msg == 'success')?this.status = 'Submitted! Thanks.':''))
