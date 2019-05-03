@@ -407,7 +407,6 @@
           <label>I Like it!</label>
           <p>{{status}}</p>
           <button type="button" @click.prevent="submitComment()" class="w3-button w3-black w3-right">Send</button>
-          <p id="demo"></p>
         </form>
       </div>
     </div>
@@ -454,11 +453,6 @@
       } else {
         x.className = x.className.replace(" w3-show", "");
       }
-    }
-
-    function sendButton() {
-      document.getElementById("demo").innerHTML = "Your message has been submitted!";
-
     }
   </script>
 
