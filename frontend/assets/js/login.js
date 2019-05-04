@@ -4,7 +4,7 @@ new Vue({
         return {
             username: '',
             password: '',
-            status: false,
+            status: '',
             msg: '',
         }
     },
