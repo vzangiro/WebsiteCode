@@ -29,13 +29,13 @@ $app->post('/api/login', function ($request, $response, $args) { //POST example
 $app->post('/api/chgpwd', function ($request, $response, $args) { //POST example
     $pdo =$this->pdo;
     $params = $request->getParsedBody();
-	$email = $params['email'];
+	$username = $params['username'];
     $password = $params['password'];
     $new_password = $params['new_password'];
 
     $updateStatement = $pdo->update(array("password" => $new_password))
-                            ->table('users')
-                            ->where('email', '=', $email)
+                            ->table('login')
+                            ->where('username', '=', $username)
                             ->where('password', '=', $password);
 
 	$stmt = $updateStatement->execute();
