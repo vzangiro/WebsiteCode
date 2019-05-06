@@ -4,6 +4,7 @@ new Vue({
         return {
             username: '',
             password: '',
+            email: '',
             status: '',
             msg: 'msg',
         }
@@ -12,13 +13,13 @@ new Vue({
     mounted() {        
     },
     methods: {
-        submitlogin () {
+        submitsignup () {
          
             axios
-                .post('http://localhost:5500/api/login', {username: this.username, password: this.password, })
+                .post('http://localhost:5500/api/login', {username: this.username, password: this.password, email: this.email})
                 .then(response => (
                     this.status = response.data.status,
-                    (this.status == true) ? window.location="index.html" : this.msg = 'Login failed'                                
+                    (this.status == true) ? window.location="index.html" : this.msg = 'Signup failed'                                
                 )                   
                 )             
                 // .then(() => ((this.msg == 'success')?this.status = 'Submitted! Thanks.':''))

@@ -23,7 +23,7 @@ $app->post('/api/comment', function ($request, $response, $args) { //POST exampl
 	$email = $params['email'];
     $comment = $params['comment'];
 
-    $insertStatement = $pdo->insert(array(  'email', 'comment' ))
+    $insertStatement = $pdo->insert(array( 'email', 'comment' ))
 								->into('commentBox')
 								->values(array($email, $comment));
     $insert =  $insertStatement->execute();

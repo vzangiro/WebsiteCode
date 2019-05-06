@@ -135,6 +135,7 @@
             <label><b>Password</b></label>
             <input v-model="password" class="w3-input w3-border" type="password" placeholder="Enter Password" name="psw" required>
             <button  @click.prevent="submitlogin()" class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Login</button>
+            <div><p class="text-warning">{{msg}}</p></div>
             <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Remember me
           </div>
         </form>
@@ -409,6 +410,7 @@
     </div>
   </div>
 
+
   <!---------------------------------------  Footer ------------------------------------- -->
   <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
     <h4>Follow Us</h4>
@@ -451,15 +453,15 @@
         x.className = x.className.replace(" w3-show", "");
       }
     }
+
   </script>
 
   <!-- Scripts -->
   <!-- development version, includes helpful console warnings -->
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> 
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script> 
   <script src="/frontend/assets/js/my.js"></script>
-  
-  
+
 
 </body>
 </html>

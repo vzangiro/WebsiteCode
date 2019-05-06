@@ -1,32 +1,42 @@
 <?php
-$app->post('/api/signup', function ($request, $response, $args) { //POST example
+
+
+$app->get('/api/signup', function ($request, $response, $args) {  //GET example
+
     $pdo =$this->pdo;
-    $params = $request->getParsedBody();
-    $username = $params['username'];
-    $email = $params['email'];
-    $password = $password['password'];
-
     $selectStatement = $pdo->select()
-                            ->from('user')
-                            ->where('username','=', $username)
-                            ->where('email', '=', $email)
-                            ->where('password','=', $password);
+                            ->from('user');
+	$stmt = $selectStatement->execute();
+	$contacts= $stmt->fetchAll();
 
-    $stmt = $selectStatement->execute();
-    $signup = $stmt->fetchAll();
-    
-    $res['signup'] = $signup;
-
-    if ($stmt->rowCount() >0)
-        $res['status'] = true;
-    else
-        $res['status'] = false;
-
-	// $res['data'] = $stmt->fetchAll();
-    $response->write(json_encode($res));
-    
+	$res['success'] = true;
+	$res['data'] = $contacts;
+	$response->write(json_encode($res));
 	$pdo = null;
-    return $response;
+	return $response;
 });
+
+// demo of insert
+$app->post('/api/signup', function ($request, $response, $args) { //POST example
+
+ 	$pdo =$this->pdo;
+	$params = $request->getParsedBody();
+	$username = $params['username'];
+    $password = $params['password'];
+    $email = $params['email'];
+
+    $insertStatement = $pdo->insert(array('username', 'password', 'email'))
+								->into('user')
+								->values(array($username, $password, $email));
+    $insert =  $insertStatement->execute();
+
+	$res['insert'] = $insert; // id of the record
+	$res['status'] = 'success';
+	$response->write(json_encode($res));
+	$pdo = null;
+	return $response;
+});
+
+
 
 ?>
